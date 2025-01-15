@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent-Porto_RevoU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+
+
+
+</head>
+<body>
+<section class="navbar">
+    <nav class="container">
+    <div>
+        <img class ="rounded-image" src="https://eswpcd25uod.exactdn.com/blog/wp-content/uploads/2017/05/01-1024x1024.jpg?strip=all&lossy=1&ssl=1" alt="">
+    </div>
+
+    <div class="navigasi">
+        <a href="#home" class="radius1">Home</a>
+        <a href="#profile" class="">Our Profile</a>
+        <a href="" class="">Portofolio</a>
+        <a href="" class="radius2">Message Us</a>
+    </div>
+    </nav>
+</section>
+
+
+
+<section id="home">
+    <h2 class="jarak roboto">Welcome <span id="name">nama</span> To Our Website</h2>
+    <p class="jarak roboto">ini adalah website latihan portofolio Vincent Mulyono RevoU</p>
+            <img src="https://preview.redd.it/st7se5vl3pm71.png?width=640&crop=smart&auto=webp&s=961f740f2e0ab84815d0ede19dcf07888a3002f9" alt="" class="img-slideshow">
+            <img src="https://preview.redd.it/8hsrjdsn3pm71.png?width=640&crop=smart&auto=webp&s=5f8322b786bf19db7c5906dc342372ef9d6a9874" alt="" class="img-slideshow">
+            <img src="https://preview.redd.it/wj6tvrtm3pm71.png?width=640&crop=smart&auto=webp&s=b6186f1d3995824ca23e15e9f18e3795c6a6a2c2" alt="" class="img-slideshow">
+            <img src="https://preview.redd.it/e21cs8ho3pm71.png?width=640&crop=smart&auto=webp&s=6f93f36baec846dbe0e816b28af59045b3c62ecb" alt="" class="img-slideshow">
+            <button onclick="plusDivs(-1)" class="gapatas">Previous</button>
+            <button onclick="plusDivs(1)" class="gapatas">Next</button>
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n){
+                showDivs((slideIndex += n));
+            }
+            function showDivs(n){
+                var i;
+                var imgList = document.getElementsByClassName("img-slideshow")
+                if(n >imgList.length) slideIndex = 1;
+                else if(n<1) slideIndex = imgList.length;
+
+                for (i = 0; i<imgList.length; i++) {
+                    imgList[i].style.display = "none";
+                }
+                imgList[slideIndex-1].style.display = "block";
+            }
+            setInterval(() => {
+                plusDivs(1);
+            }, 1000);
+
+            </script>
+</section>
+        
+        <section>
+        <header id="profile">
+            <h2>Our Profile</h2>
+        </header>
+        <div class="content"></div>
+    </section>
+
+
+        <header id="Message">
+            <h2>Message Us</h2>
+        </header>
+        
+        <section>
+        <form action="" method="post">
+        <div class="form-input">
+            <label for="">Nama</label>
+            <input type="text">
+        </div>
+
+        <div class="form-input">
+        <label for="">Tanggal Lahir</label>
+        <input type="date" name="" id="">
+    </div>
+
+        <div class="form-input">
+        <label for="">Jenis Kelamin</label>
+        <input type="checkbox" name="" id="" class="jarak">Laki-Laki
+        <input type="checkbox" name="" id="" class="jarak">Perempuan
+    </div>
+
+        <div class="form-input" id="4">
+        <label for="">Pesan</label>
+        <textarea name="" id="" placeholder="Tulis Saran"></textarea>
+    </div>
+        </form>
+        </section>
+        
+
+
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+<footer>
+    <hr>
+    <h2 class="roboto pojok">Created By Vincent Mulyono RevoU</h2>
+</footer>
+</html>
