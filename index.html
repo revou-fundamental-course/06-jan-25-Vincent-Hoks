@@ -23,7 +23,7 @@
         <img class ="rounded-image" src="https://eswpcd25uod.exactdn.com/blog/wp-content/uploads/2017/05/01-1024x1024.jpg?strip=all&lossy=1&ssl=1" alt="">
     </div>
 
-    <div class="navigasi">
+    <div class="navigasi poppins">
         <a href="#home" class="radius1">Home</a>
         <a href="#profile" class="">Our Profile</a>
         <a href="" class="">Portofolio</a>
@@ -43,7 +43,7 @@
             <img src="https://preview.redd.it/e21cs8ho3pm71.png?width=640&crop=smart&auto=webp&s=6f93f36baec846dbe0e816b28af59045b3c62ecb" alt="" class="img-slideshow">
             <button onclick="plusDivs(-1)" class="gapatas">Previous</button>
             <button onclick="plusDivs(1)" class="gapatas">Next</button>
-            <script>
+        <script>
             var slideIndex = 1;
             showDivs(slideIndex);
 
@@ -65,12 +65,19 @@
                 plusDivs(1);
             }, 1000);
 
-            </script>
+        </script>
 </section>
         
-        <section>
+    <section class="header1">
         <header id="profile">
-            <h2>Our Profile</h2>
+            <h2>My Profile</h2>
+        </header>
+        <div class="content"></div>
+    </section>
+
+    <section class="header1">
+        <header id="Portofolio">
+            <h2>My Portofolio </h2>
         </header>
         <div class="content"></div>
     </section>
@@ -80,30 +87,44 @@
             <h2>Message Us</h2>
         </header>
         
-        <section>
-        <form action="" method="post">
-        <div class="form-input">
-            <label for="">Nama</label>
-            <input type="text">
+<section>
+    <form action="index.html" method="post" class="form-container">
+
+        <div class="input-container">
+
+            <div class="form-input">
+                    <label for="">Nama</label>
+                    <input type="text" id="1">
+            </div>
+
+            <div class="form-input">
+                <label for="">Tanggal Lahir</label>
+                <input type="date" name="" id="2">
+            </div>
+
+            <div class="form-input">
+                <label for="">Jenis Kelamin</label>
+                <input type="checkbox" name="" id="3" class="jarak">Laki-Laki
+                <input type="checkbox" name="" id="4" class="jarak">Perempuan
+            </div>
+s
+            <div class="form-input" id="">
+                <label for="">Pesan</label>
+                <textarea name="" id="5" placeholder="Tulis Saran"></textarea>
+            </div>
+            <button type="submit" onclick="printsemua(event);" id="buttoncuk">Submit</button>
         </div>
 
-        <div class="form-input">
-        <label for="">Tanggal Lahir</label>
-        <input type="date" name="" id="">
-    </div>
+        <div class="respond-box">
+            <h3>Hasil Form</h3>
+            <p><strong>Nama:</strong> </p>
+            <p><strong>Tanggal Lahir:</strong> </p>
+            <p><strong>Jenis Kelamin:</strong> </p>
+            <p><strong>Pesan:</strong> </p>
+        </div>
 
-        <div class="form-input">
-        <label for="">Jenis Kelamin</label>
-        <input type="checkbox" name="" id="" class="jarak">Laki-Laki
-        <input type="checkbox" name="" id="" class="jarak">Perempuan
-    </div>
-
-        <div class="form-input" id="4">
-        <label for="">Pesan</label>
-        <textarea name="" id="" placeholder="Tulis Saran"></textarea>
-    </div>
-        </form>
-        </section>
+    </form>
+</section>
         
 
 

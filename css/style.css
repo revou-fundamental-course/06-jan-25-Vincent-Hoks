@@ -1,5 +1,7 @@
 
-
+*{
+    font-family: roboto,sans-serif;
+}
 .rounded-image{
 display: flex;
 border-radius: 50%;
@@ -18,7 +20,6 @@ width: 100px;
 }
 .navigasi>a{
     margin-right: 10px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
 }
@@ -48,12 +49,38 @@ width: 100px;
     background-size: cover;
     background-position: center;
     display: none;
-    width: 100%;
+    width: 80%;
+    
 }
 
+.respond-box{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 500px;
+}
 
+.form-container{
+    display: flex;
+    justify-content: space-between;
+}
 
+.input-container{
+    margin-left: 300px;
+}
 
+form{
+    margin-left: 0px;
+    font-size: 20px;
+}
+.form-input{
+    display: flex;    
+    margin-top: 50px;
+    
+}
 
 
 
@@ -103,14 +130,6 @@ margin: 0 1px 0 0;
 
 
 
-form{
-    margin-left: 200px;
-    font-size: 20px;
-}
-.form-input{
-    display: flex;    
-    margin-top: 20px;
-}
 .jarak{
     margin-left: 20px;
 }
