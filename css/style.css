@@ -53,12 +53,11 @@ text-align: center;
     }
 
 
+    /* Autoslide Image */
 .autoslide{
     height: 500px;
 
 }
-
-
 
 .img-slideshow{
     width: 70%;
@@ -76,6 +75,7 @@ text-align: center;
     display: flex;
     justify-content: center;
 }
+
 
 
 .jarak{
