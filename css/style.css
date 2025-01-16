@@ -10,18 +10,15 @@
     margin: 0;
 }
 
+/* Navbar */
 .rounded-image{
 display: flex;
 border-radius: 50%;
 height: 75px;
 width: 75px;
-margin-left: 75px;
 margin-top: 10px;
 }
 
-.navbar{
-    position: sticky;
-}
 .container{
     display: flex;
     justify-content: space-between;
@@ -43,6 +40,8 @@ margin-top: 10px;
     display: flex;
     align-items: center;
 }
+/* Selesai Navbar */
+
 
 .tittle-home{
 margin-top: 10px;
@@ -294,4 +293,41 @@ button:active {
     margin: 0.5rem 0;
     font-size: 1rem;
     color: #555;
+}
+
+.navigasi a:last-child {
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--main-color);
+        height: auto; /* Biarkan tinggi container menyesuaikan */
+        padding: 1rem 0;
+    }
+
+    .rounded-image {
+        margin-bottom: 10px; /* Jarak dengan navigasi */
+    }
+
+    .navigasi {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column; /* Ubah navigasi menjadi kolom */
+        align-items: center; /* Pusatkan navigasi */
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    .navigasi a {
+        display: block; /* Link memenuhi lebar */
+        text-align: center;
+        width: 100%; /* Pastikan link memenuhi layar */
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Tambahkan garis bawah untuk memisahkan link */
+    }
+
 }
