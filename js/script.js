@@ -5,8 +5,10 @@ function gantinama(){
 
 gantinama();
 
-function printsemua(event){
+function printsemua(event) {
     event.preventDefault();
+
+    // Ambil nilai dari input
     const nama = document.getElementById('1').value;
     const tanggalLahir = document.getElementById('2').value;
 
@@ -29,5 +31,6 @@ function printsemua(event){
     `;
 
     // Tampilkan hasil ke respond-box
-    document.getElementsByClassName(respondBox).innerHTML = output;
+    const respondBox = document.querySelector('.respond-box');
+    respondBox.innerHTML = output;
 }

@@ -1,106 +1,83 @@
+:root {
+    --bg-color: #fff;
+    --snd-bg-color: #d5fdf9;
+    --text-color: #000;
+    --main-color: #a741a3;
+}
 
 *{
     font-family: roboto,sans-serif;
+    margin: 0;
 }
+
 .rounded-image{
 display: flex;
 border-radius: 50%;
-height: 100px;
-width: 100px;
+height: 75px;
+width: 75px;
+margin-left: 75px;
+margin-top: 10px;
 }
 
+.navbar{
+    position: sticky;
+}
 .container{
     display: flex;
     justify-content: space-between;
+    background-color: var(--main-color);
+    height: 100px;
 }
+
 .navigasi{
+    margin-top: 40px;
     display: flex;
-    margin-top: 20px;
+    align-content: center;
     margin-right: 200px;
+
 }
 .navigasi>a{
-    margin-right: 10px;
+    font-weight: 700;
+    color: white;
+    margin-right: 20px;
     display: flex;
     align-items: center;
 }
+
+.tittle-home{
+margin-top: 10px;
+text-align: center;
+}
+
+.tittle-home>p{
+    margin-top: 10px;
+    }
+
 
 .autoslide{
     height: 500px;
 
 }
 
-.slide-1{
-    background-image: ("https://preview.redd.it/st7se5vl3pm71.png?width=640&crop=smart&auto=webp&s=961f740f2e0ab84815d0ede19dcf07888a3002f9");
-}
-.slide-2{
-    background-image: ("https://preview.redd.it/8hsrjdsn3pm71.png?width=640&crop=smart&auto=webp&s=5f8322b786bf19db7c5906dc342372ef9d6a9874");
-}
-.slide-3{
-    background-image: ("https://preview.redd.it/wj6tvrtm3pm71.png?width=640&crop=smart&auto=webp&s=b6186f1d3995824ca23e15e9f18e3795c6a6a2c2");
-}
-.slide-4{
-    background-image: ("https://preview.redd.it/e21cs8ho3pm71.png?width=640&crop=smart&auto=webp&s=6f93f36baec846dbe0e816b28af59045b3c62ecb");
-}
+
 
 .img-slideshow{
-    width: 50%;
+    width: 70%;
     height: 50%;
     object-fit: cover;
     background-size: cover;
     background-position: center;
-    display: none;
-    width: 80%;
-    
-}
-
-.respond-box{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 400px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-right: 500px;
-}
-
-.form-container{
     display: flex;
-    justify-content: space-between;
-}
-
-.input-container{
-    margin-left: 300px;
-}
-
-form{
-    margin-left: 0px;
-    font-size: 20px;
-}
-.form-input{
-    display: flex;    
-    margin-top: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.radius1{
-    border-radius: 10px 0 0 10px;
+.image-curut{
+    align-content: center;
+    display: flex;
+    justify-content: center;
 }
-.radius2{
-    border-radius: 0 10px 10px 0;
-}
+
 
 .jarak{
     margin-top: 10px;
@@ -110,9 +87,66 @@ form{
     font-family: roboto,sans-serif;
 }
 
+.button-style{
+margin-top: 10px;
+padding: 10px;
+background-color: var(--main-color);
+border-radius: 10px;
+color: white;
+border: none;
+}
 
-.gapatas{
-margin: 10px 0 0 0;
+#profile {
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center;    /* Memusatkan konten secara vertikal */
+    height: 900px;          /* Tetap mempertahankan tinggi section */
+    background-color: var(--snd-bg-color); /* Warna latar belakang tetap */
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak konten dalam kolom */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    align-items: center;     /* Memusatkan konten secara horizontal */
+    width: 100%;             /* Tetap lebar penuh */
+    text-align: center;      /* Memastikan teks berada di tengah */
+}
+
+.header-profile {
+    margin-bottom: 1rem;    /* Memberikan jarak dengan konten lain */
+}
+
+.profil-content {
+    padding: 0 2rem;        /* Memberikan ruang di dalam konten */
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.profil-content p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.4rem;
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .gapbawah{
@@ -128,8 +162,136 @@ margin: 0 1px 0 0;
 
 }
 
-
-
 .jarak{
     margin-left: 20px;
+}
+
+
+/* Memasukan Gambar */
+.slide-1{
+    background-image: ("https://preview.redd.it/st7se5vl3pm71.png?width=640&crop=smart&auto=webp&s=961f740f2e0ab84815d0ede19dcf07888a3002f9");
+}
+.slide-2{
+    background-image: ("https://preview.redd.it/8hsrjdsn3pm71.png?width=640&crop=smart&auto=webp&s=5f8322b786bf19db7c5906dc342372ef9d6a9874");
+}
+.slide-3{
+    background-image: ("https://preview.redd.it/wj6tvrtm3pm71.png?width=640&crop=smart&auto=webp&s=b6186f1d3995824ca23e15e9f18e3795c6a6a2c2");
+}
+.slide-4{
+    background-image: ("https://preview.redd.it/e21cs8ho3pm71.png?width=640&crop=smart&auto=webp&s=6f93f36baec846dbe0e816b28af59045b3c62ecb");
+}
+
+/* Styling Form */
+#message {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+header h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.form-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-input label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="date"], textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.respond-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 400px;
+}
+
+.respond-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.respond-box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
 }

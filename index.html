@@ -9,40 +9,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <style>
+<style>
 
-    </style>
-
-
+</style>
 
 </head>
 <body>
+
 <section class="navbar">
-    <nav class="container">
+<div class="container">
     <div>
         <img class ="rounded-image" src="https://eswpcd25uod.exactdn.com/blog/wp-content/uploads/2017/05/01-1024x1024.jpg?strip=all&lossy=1&ssl=1" alt="">
     </div>
-
-    <div class="navigasi poppins">
-        <a href="#home" class="radius1">Home</a>
-        <a href="#profile" class="">Our Profile</a>
-        <a href="" class="">Portofolio</a>
-        <a href="" class="radius2">Message Us</a>
-    </div>
+    <nav>
+        <div class="navigasi poppins">
+            <a href="#home" class="radius1">Home</a>
+            <a href="#profile" class="">Our Profile</a>
+            <a href="#message" class="radius2">Message Me</a>
+        </div>
     </nav>
+</div>
 </section>
 
-
-
 <section id="home">
-    <h2 class="jarak roboto">Welcome <span id="name">nama</span> To Our Website</h2>
-    <p class="jarak roboto">ini adalah website latihan portofolio Vincent Mulyono RevoU</p>
-            <img src="https://preview.redd.it/st7se5vl3pm71.png?width=640&crop=smart&auto=webp&s=961f740f2e0ab84815d0ede19dcf07888a3002f9" alt="" class="img-slideshow">
-            <img src="https://preview.redd.it/8hsrjdsn3pm71.png?width=640&crop=smart&auto=webp&s=5f8322b786bf19db7c5906dc342372ef9d6a9874" alt="" class="img-slideshow">
-            <img src="https://preview.redd.it/wj6tvrtm3pm71.png?width=640&crop=smart&auto=webp&s=b6186f1d3995824ca23e15e9f18e3795c6a6a2c2" alt="" class="img-slideshow">
-            <img src="https://preview.redd.it/e21cs8ho3pm71.png?width=640&crop=smart&auto=webp&s=6f93f36baec846dbe0e816b28af59045b3c62ecb" alt="" class="img-slideshow">
-            <button onclick="plusDivs(-1)" class="gapatas">Previous</button>
-            <button onclick="plusDivs(1)" class="gapatas">Next</button>
+    <header>
+        <div class="tittle-home">
+            <h2 class="roboto">Welcome <span id="name">nama</span> To Our Website</h2>
+            <p class="roboto">ini adalah website latihan portofolio Vincent Mulyono RevoU</p>
+        </div>
+    </header>
+        <div class="image-curut">
+                <img src="https://preview.redd.it/st7se5vl3pm71.png?width=640&crop=smart&auto=webp&s=961f740f2e0ab84815d0ede19dcf07888a3002f9" alt="" class="img-slideshow">
+                <img src="https://preview.redd.it/8hsrjdsn3pm71.png?width=640&crop=smart&auto=webp&s=5f8322b786bf19db7c5906dc342372ef9d6a9874" alt="" class="img-slideshow">
+                <img src="https://preview.redd.it/wj6tvrtm3pm71.png?width=640&crop=smart&auto=webp&s=b6186f1d3995824ca23e15e9f18e3795c6a6a2c2" alt="" class="img-slideshow">
+                <img src="https://preview.redd.it/e21cs8ho3pm71.png?width=640&crop=smart&auto=webp&s=6f93f36baec846dbe0e816b28af59045b3c62ecb" alt="" class="img-slideshow">
+        </div>
+        <center>
+                <button onclick="plusDivs(-1)" class="button-style">Previous</button>
+                <button onclick="plusDivs(1)" class="button-style">Next</button>
+        </center>
+
         <script>
             var slideIndex = 1;
             showDivs(slideIndex);
@@ -67,70 +73,70 @@
 
         </script>
 </section>
-        
-    <section class="header1">
-        <header id="profile">
-            <h2>My Profile</h2>
-        </header>
-        <div class="content"></div>
-    </section>
 
-    <section class="header1">
-        <header id="Portofolio">
-            <h2>My Portofolio </h2>
-        </header>
-        <div class="content"></div>
-    </section>
+<section  id="profile">
 
+    <div class=" profile profile-wrapper">
+        <div class="profile-isi">
+            <header>
+                <h2 class="header-profile">My Profile</h2>
+            </header>
+            <div class="profil-content">
+                <h2 class="heading">About <span>Me</span> </h2>
+                <h3>I'm a <span>Ai Engineer</span></h3>
+                <p>Saya mahasiswa AI Engineering di Universitas Indonesia yang fokus pada pengembangan solusi kecerdasan buatan untuk menyelesaikan masalah nyata.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </div>  
 
-        <header id="Message">
-            <h2>Message Us</h2>
-        </header>
-        
-<section>
+</section>
+
+<section id="message">
+    <header><h2>Message Me</h2></header>
     <form action="index.html" method="post" class="form-container">
 
         <div class="input-container">
-
             <div class="form-input">
-                    <label for="">Nama</label>
-                    <input type="text" id="1">
-            </div>
-
-            <div class="form-input">
-                <label for="">Tanggal Lahir</label>
-                <input type="date" name="" id="2">
+                <label for="1">Nama</label>
+                <input type="text" id="1" placeholder="Masukkan nama Anda">
             </div>
 
             <div class="form-input">
-                <label for="">Jenis Kelamin</label>
-                <input type="checkbox" name="" id="3" class="jarak">Laki-Laki
-                <input type="checkbox" name="" id="4" class="jarak">Perempuan
+                <label for="2">Tanggal Lahir</label>
+                <input type="date" name="tanggal-lahir" id="2">
             </div>
-s
-            <div class="form-input" id="">
-                <label for="">Pesan</label>
-                <textarea name="" id="5" placeholder="Tulis Saran"></textarea>
+
+            <div class="form-input">
+                <label for="3">Jenis Kelamin</label>
+                <div class="checkbox-group">
+                    <input type="radio" name="gender" id="3" class="jarak">
+                    <label for="3">Laki-Laki</label>
+                    <input type="radio" name="gender" id="4" class="jarak">
+                    <label for="4">Perempuan</label>
+                </div>
             </div>
+
+            <div class="form-input">
+                <label for="5">Pesan</label>
+                <textarea name="pesan" id="5" placeholder="Tulis pesan atau saran Anda"></textarea>
+            </div>
+
             <button type="submit" onclick="printsemua(event);" id="buttoncuk">Submit</button>
         </div>
 
         <div class="respond-box">
             <h3>Hasil Form</h3>
-            <p><strong>Nama:</strong> </p>
-            <p><strong>Tanggal Lahir:</strong> </p>
-            <p><strong>Jenis Kelamin:</strong> </p>
-            <p><strong>Pesan:</strong> </p>
+            <p><strong>Nama:</strong></p>
+            <p><strong>Tanggal Lahir:</strong></p>
+            <p><strong>Jenis Kelamin:</strong></p>
+            <p><strong>Pesan:</strong></p>
         </div>
 
     </form>
 </section>
+
         
-
-
-
-
-
 
 <script src="js/script.js"></script>
 </body>
